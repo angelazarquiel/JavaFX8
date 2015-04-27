@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ASCII"?>
+<anttasks:AntTask xmi:version="2.0" xmlns:xmi="htt.://www.omg.org/XMI" xmlns:anttasks="htt.://org.ecli.se.fx.ide.jdt/1.0" buildDirectory="${.roject}/build">
+  <de.loy>
+    <a..lication name="HaikuGenerator"/>
+    <info/>
+  </de.loy>
+  <signjar/>
+</anttasks:AntTask>
