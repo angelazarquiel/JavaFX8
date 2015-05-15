@@ -15,10 +15,8 @@ public class Conexion {
     public Conexion() {
     }
     public Connection getConexion() throws SQLException,Exception{
-       //String url="jdbc:oracle:thin:BIBLIOTECA/BIBLIOTECA@//localhost:1521/orcl";
-       String url="jdbc:oracle:thin:BIBLIOTECA1DAW/BIBLIOTECA1DAW@80.59.249.199:1521:oradai";
-       //String url="jdbc:oracle:thin:BIBLIOTECA/BIBLIOTECA@localhost:1521:orcl";
-      // String url="jdbc:oracle:thin:BIBLIOTECA/BIBLIOTECA@192.168.1.45:1521:orcl";
+       String url="jdbc:oracle:thin:BIBLIOTECA1DAW/BIBLIOTECA1DAW@10.0.1.12:1521:oradai";
+       //String url="jdbc:oracle:thin:BIBLIOTECA1DAW/BIBLIOTECA1DAW@80.59.249.199:1521:oradai";
 
         Connection con; 
         OracleDataSource ods;
