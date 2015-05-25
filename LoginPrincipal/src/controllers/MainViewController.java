@@ -19,7 +19,15 @@ public class MainViewController {
 
     @FXML
     private Button salir;
+    
+    @FXML
+    private Button dialogo;
 
+    @FXML
+    void onDialogo(ActionEvent event) {
+    	ApplicationController.showUserDialog();
+    }
+    
     @FXML
     void onSalir(ActionEvent event) {
     	ApplicationController.goToLoginView();

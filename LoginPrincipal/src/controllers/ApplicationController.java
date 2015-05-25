@@ -6,10 +6,13 @@ import java.net.URL;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class ApplicationController {
       private static Stage stage;
+      private static Stage userDialog;
 	  
 	  public static void setStage(Stage primaryStage) {
 		stage=primaryStage;
@@ -31,6 +34,22 @@ public class ApplicationController {
 	  
 	  public static void closeApp() {
 		  stage.close();
+	  }
+	  
+	  public static void showUserDialog() {
+	      userDialog=new Stage(StageStyle.DECORATED);
+	      userDialog.initModality(Modality.WINDOW_MODAL);
+	      userDialog.initOwner(stage);
+	      try {
+			Parent root = FXMLLoader.load( ApplicationController.class.getResource("/views/DialogView.fxml"));
+			Scene s=new Scene(root);
+			userDialog.setScene(s);
+			userDialog.show();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	      
+	      
 	  }
 		    
 	  private static void loadForm(String fxml) {
@@ -63,6 +82,10 @@ public class ApplicationController {
 					e.printStackTrace();
 				}			   
 		   }
+
+	public static void closeUserDialog() {
+		userDialog.close();
+	}
 
 
 	
