@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.40-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainViewController">
+   <bottom>
+      <Button fx:id="salir" mnemonicParsing="false" onAction="#onSalir" text="Cerrar sesión" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </BorderPane.margin></Button>
+   </bottom>
+   <top>
+      <Label text="Ventana principal" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <ImageView pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@images/logoAzarquiel.jpg" />
+         </image>
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </BorderPane.margin>
+      </ImageView>
+   </center>
+</BorderPane>
